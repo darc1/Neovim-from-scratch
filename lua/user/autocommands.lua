@@ -30,6 +30,9 @@ vim.cmd [[
   augroup end
 ]]
 
+vim.cmd([[ command! W :w ]])
+vim.cmd([[ vnoremap <space> :w! ~/clipboard/copy.txt<CR> ]])
+vim.cmd([[ vnoremap M :w! ~/clipboard/copy.txt<CR> ]])
 -- Autoformat
 -- augroup _lsp
 --   autocmd!
